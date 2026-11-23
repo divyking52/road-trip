@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAIRN &amp; AXLE — Curated Road Trip Expeditions (Multi-Page Home)</title>
+  <meta name="description" content="Curated road trips, scenic self-drive expeditions, small-group mountain passes, coastal drives, and overland adventures.">
+  <meta name="theme-color" content="#34302B">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..600&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="expect" href="#page-hero" blocking="render">
+</head>
+<body data-page="home">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div class="custom-cursor" id="customCursor" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="nav-inner">
+      <a href="home.html" class="brand-logo" aria-label="Cairn & Axle Overland Home">
+        <span class="brand-mark" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5.5" r="1.8" fill="#C47752" stroke="#C47752"/><rect x="8.5" y="9" width="7" height="3.2" rx="1.6"/><rect x="6" y="13.8" width="12" height="3.6" rx="1.8"/><path d="M3.5 19.5h17" stroke="#C47752" stroke-width="2"/><circle cx="6" cy="19.5" r="1.3" fill="#F6F0E4" stroke="none"/><circle cx="18" cy="19.5" r="1.3" fill="#F6F0E4" stroke="none"/></svg></span>
+        <span class="brand-wordmark"><strong>CAIRN &amp; AXLE</strong><span>Overland Motor Club</span></span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-links">
+          <li><a href="home.html" class="nav-link is-active" aria-current="page">Home</a></li>
+          <li><a href="trips.html" class="nav-link">Road Trips</a></li>
+          <li><a href="about.html" class="nav-link">Why Us</a></li>
+          <li><a href="how-it-works.html" class="nav-link">How It Works</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="journal.html" class="nav-link">Journal</a></li>
+          <li><a href="contact.html" class="nav-link">Enquire</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn--primary nav-cta magnetic"><span>Plan Your Journey</span><svg class="arrow-glide" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        <button type="button" class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileDrawer" aria-label="Toggle navigation menu"><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="scroll-progress-track" aria-hidden="true"><div class="scroll-progress-bar" id="scrollProgressBar"></div></div>
+  </header>
+
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <nav aria-label="Mobile navigation">
+      <ul class="mobile-nav-list">
+        <li><a href="home.html" aria-current="page">Home <span>01</span></a></li>
+        <li><a href="trips.html">Road Trips <span>02</span></a></li>
+        <li><a href="about.html">Why Us &amp; Accreditations <span>03</span></a></li>
+        <li><a href="how-it-works.html">How It Works &amp; FAQ <span>04</span></a></li>
+        <li><a href="gallery.html">Visual Gallery <span>05</span></a></li>
+        <li><a href="journal.html">Travel Journal <span>06</span></a></li>
+        <li><a href="contact.html">Contact &amp; Enquiry <span>07</span></a></li>
+      </ul>
+    </nav>
+    <div class="mobile-drawer-footer">
+      <a href="contact.html" class="btn btn--primary" style="width:100%;">Plan My Road Trip</a>
+      <a href="index.html" style="font-family:var(--font-mono);font-size:0.72rem;color:var(--sand-muted);text-align:center;">View Single-Page Edition (index.html)</a>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <section class="hero" id="page-hero" aria-labelledby="hero-heading">
+      <div class="hero-backdrop" id="heroParallax">
+        <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1920&q=85" alt="Overland vehicle cruising along a golden mountain-canyon highway at dusk" class="hero-bg-img" fetchpriority="high" width="1920" height="1280">
+      </div>
+      <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="hero-road-canvas" aria-hidden="true">
+        <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+          <path class="road-trace--solid" d="M -40 760 C 260 660, 380 430, 720 470 S 1180 280, 1490 120" />
+          <path class="road-trace" d="M -40 760 C 260 660, 380 430, 720 470 S 1180 280, 1490 120" />
+        </svg>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="hero-kicker">
+            <span class="eyebrow">Curated Self-Drive &amp; Convoy Expeditions</span>
+            <span class="hero-telemetry" id="heroLiveCoords">34°16'N · 77°35'E · 5,359M</span>
+          </div>
+          <h1 class="hero-headline" id="hero-heading" data-split-text>The Road Is Calling.<span class="accent-line">Answer It.</span></h1>
+          <p class="hero-description">Leave hurried itineraries behind. Cairn & Axle crafts small-group road journeys, scenic mountain passes, coastal highways, and self-drive expeditions backed by seasoned road captains and boutique stays.</p>
+          <div class="hero-ctas">
+            <a href="trips.html" class="btn btn--primary magnetic"><span>Explore Road Trips</span><svg class="arrow-glide" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+            <a href="contact.html" class="btn btn--secondary magnetic"><span>Plan Your Journey</span></a>
+          </div>
+          <div class="hero-proof-strip">
+            <div class="hero-proof-item"><strong>6 Signature</strong><span>Expedition Corridors</span></div>
+            <div class="hero-proof-item"><strong>Max 6 Cars</strong><span>Per Convoy Group</span></div>
+            <div class="hero-proof-item"><strong>24/7 Backup</strong><span>Mechanical &amp; Route Crew</span></div>
+          </div>
+        </div>
+
+        <aside class="hero-enquiry-card" aria-labelledby="hero-form-title">
+          <div class="hero-enquiry-header">
+            <span class="eyebrow" style="margin-bottom:0.35rem;">Quick Route Dispatch</span>
+            <h2 id="hero-form-title">Lock Your Seat or Custom Route</h2>
+            <p>Receive departure availability &amp; a route dossier within 24 hours.</p>
+          </div>
+          <form id="heroEnquiryForm" novalidate>
+            <div class="hero-form-grid">
+              <div class="field full">
+                <label for="hero-name">Your Name</label>
+                <input type="text" id="hero-name" name="name" required autocomplete="name" placeholder="e.g., Rohan Verma" data-error="hero-name-err">
+                <div id="hero-name-err" class="error-msg"><span role="img" aria-label="Error">!</span> Please enter your full name.</div>
+              </div>
+              <div class="field full">
+                <label for="hero-destination">Preferred Corridor</label>
+                <select id="hero-destination" name="destination" required data-error="hero-dest-err">
+                  <option value="">Select a road trip corridor…</option>
+                  <option value="Leh–Ladakh & Khardung La Traverse">Leh–Ladakh &amp; Khardung La (Mountain)</option>
+                  <option value="Konkan & Western Coast Highway">Konkan &amp; Western Coast (Coastal)</option>
+                  <option value="Great Thar & Jaisalmer Dune Trail">Great Thar &amp; Jaisalmer (Desert)</option>
+                  <option value="Coorg & Chikmagalur Misty Ridge">Coorg &amp; Chikmagalur (Weekend)</option>
+                  <option value="Satpura & Kanha Canopy Drive">Satpura &amp; Kanha (Forest &amp; Wildlife)</option>
+                  <option value="Spiti Valley to Rann Grand Circuit">Spiti to Rann Circuit (Cross-Country)</option>
+                </select>
+                <div id="hero-dest-err" class="error-msg"><span role="img" aria-label="Error">!</span> Choose a destination corridor.</div>
+              </div>
+              <div class="field">
+                <label for="hero-month">Target Date</label>
+                <input type="date" id="hero-month" name="travelDate" required data-error="hero-date-err">
+                <div id="hero-date-err" class="error-msg"><span role="img" aria-label="Error">!</span> Pick a start date.</div>
+              </div>
+              <div class="field">
+                <label for="hero-phone">Phone / WhatsApp</label>
+                <input type="tel" id="hero-phone" name="phone" required pattern="[\+\d\s\-]{8,18}" autocomplete="tel" placeholder="+91 98XXX XXXXX" data-error="hero-phone-err">
+                <div id="hero-phone-err" class="error-msg"><span role="img" aria-label="Error">!</span> Enter a valid phone number.</div>
+              </div>
+              <div class="full"><button type="submit" class="btn btn--primary magnetic" style="width:100%;">Request Route Dossier &rarr;</button></div>
+            </div>
+            <div class="hero-form-status" id="heroFormStatus" role="status" aria-live="polite"></div>
+          </form>
+        </aside>
+      </div>
+
+      <div class="container hero-bottom-bar">
+        <div class="floating-trip-panel" aria-label="Upcoming departure preview">
+          <div class="ftp-badge"><span>Next Convoy · Demo</span><strong id="ftpTitle">Leh–Ladakh Traverse</strong></div>
+          <div class="ftp-cell"><span>Category</span><strong id="ftpCategory">Mountain Escapes</strong></div>
+          <div class="ftp-cell"><span>Duration</span><strong id="ftpDuration">9 Days · 1,420 km</strong></div>
+          <div class="ftp-cell"><span>Starting From</span><strong id="ftpPrice">₹48,500</strong></div>
+          <div class="ftp-cell"><span>Departure</span><strong id="ftpDate">14 Jun 2027</strong></div>
+          <div class="ftp-controls">
+            <button type="button" class="ftp-btn" id="ftpPrev" aria-label="Previous departure">&lsaquo;</button>
+            <button type="button" class="ftp-btn" id="ftpNext" aria-label="Next departure">&rsaquo;</button>
+            <a href="trip-detail.html?id=leh-ladakh" class="ftp-btn" id="ftpInspect" aria-label="Open full route page">&nearr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="route-ticker-band" id="routeTickerBand" aria-label="Signature corridors">
+      <div class="route-ticker-track">
+        <span class="ticker-item"><span class="ticker-dot"></span>LEH–LADAKH · 5,359M PASSES</span>
+        <span class="ticker-item"><span class="ticker-dot"></span>KONKAN COASTAL HIGHWAY · 890 KM</span>
+        <span class="ticker-item"><span class="ticker-dot"></span>GREAT THAR DUNE EXPEDITION · 6 DAYS</span>
+        <span class="ticker-item"><span class="ticker-dot"></span>COORG MISTY RIDGE · WEEKEND</span>
+        <span class="ticker-item"><span class="ticker-dot"></span>SATPURA CANOPY DRIVE · 780 KM</span>
+        <span class="ticker-item"><span class="ticker-dot"></span>SPITI TO RANN CIRCUIT · 3,280 KM</span>
+        <span class="ticker-item" aria-hidden="true"><span class="ticker-dot"></span>LEH–LADAKH · 5,359M PASSES</span>
+        <span class="ticker-item" aria-hidden="true"><span class="ticker-dot"></span>KONKAN COASTAL HIGHWAY · 890 KM</span>
+        <span class="ticker-item" aria-hidden="true"><span class="ticker-dot"></span>GREAT THAR DUNE EXPEDITION · 6 DAYS</span>
+        <span class="ticker-item" aria-hidden="true"><span class="ticker-dot"></span>COORG MISTY RIDGE · WEEKEND</span>
+        <span class="ticker-item" aria-hidden="true"><span class="ticker-dot"></span>SATPURA CANOPY DRIVE · 780 KM</span>
+        <span class="ticker-item" aria-hidden="true"><span class="ticker-dot"></span>SPITI TO RANN CIRCUIT · 3,280 KM</span>
+      </div>
+      <button type="button" class="ticker-pause-btn" id="tickerPauseBtn">Pause</button>
+    </div>
+
+    <!-- 3D Road Trips Spotlight -->
+    <section class="section-dark" aria-labelledby="home-trips-title">
+      <div class="topo-bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-header-row">
+          <div data-slide="left">
+            <span class="eyebrow">01 · Flagship Corridors</span>
+            <h2 class="section-title" id="home-trips-title">Six Highways Built for <em>Unrushed Drivers</em></h2>
+            <p class="section-lead">Rotate through our curated self-drive corridors or jump into the complete filterable Road Trips catalogue with live budget filtering.</p>
+          </div>
+          <div style="display:flex;gap:0.65rem;align-items:center;flex-wrap:wrap;" data-slide="right">
+            <button type="button" class="pause-pill" id="pkgAutoToggle">Pause Rotation</button>
+            <button type="button" class="icon-circle-btn" id="pkgPrev" aria-label="Previous trip">&lsaquo;</button>
+            <button type="button" class="icon-circle-btn" id="pkgNext" aria-label="Next trip">&rsaquo;</button>
+            <a href="trips.html" class="btn btn--secondary" style="padding:0.65rem 1.2rem;font-size:0.84rem;">All Road Trips &rarr;</a>
+          </div>
+        </div>
+        <div class="packages-route-strip" data-slide="left"><svg class="packages-route-svg" viewBox="0 0 1100 56"><path class="route-connector-bg" d="M 60 24 C 190 8, 250 40, 380 24 S 580 8, 710 24 S 920 40, 1040 24"/><path class="route-connector-active" id="packagesRouteLine" d="M 60 24 C 190 8, 250 40, 380 24 S 580 8, 710 24 S 920 40, 1040 24"/><g id="packagesRouteNodes"></g></svg></div>
+        <div class="packages-stage-wrap" data-slide="right"><div class="packages-3d-stage" id="packagesStage" aria-live="polite"></div></div>
+        <p id="pkgCounter" style="font-family:var(--font-mono);font-size:0.74rem;color:var(--sand-muted);text-align:center;"></p>
+      </div>
+    </section>
+
+    <!-- Multi-Page Directory Gateway -->
+    <section class="section-sand-light" aria-labelledby="explore-pages-title">
+      <div class="container">
+        <div class="section-header-row">
+          <div data-slide="left">
+            <span class="eyebrow eyebrow--dark">02 · Explore The Expedition World</span>
+            <h2 class="section-title section-title--on-light" id="explore-pages-title">Every Chapter Has Its <em>Own Horizon</em></h2>
+          </div>
+          <a href="about.html" class="btn btn--dark" data-slide="right">Why Travel With Us &rarr;</a>
+        </div>
+        <div class="trips-catalog-grid">
+          <a href="about.html" class="check-card" data-slide="left" style="display:flex;flex-direction:column;gap:0.7rem;">
+            <span class="eyebrow eyebrow--dark">Page · Why Us</span>
+            <h3 style="font-size:1.55rem;">Road-Map Standards &amp; Accreditations</h3>
+            <p style="color:var(--charcoal-muted);font-size:0.94rem;">Explore our 6-stop winding road philosophy, convoy safety craft, and editable credibility crest slots.</p>
+            <strong style="font-family:var(--font-mono);font-size:0.74rem;color:var(--terracotta-deep);margin-top:auto;">OPEN WHY US PAGE &rarr;</strong>
+          </a>
+          <a href="how-it-works.html" class="check-card" data-slide="right" data-slide-delay="1" style="display:flex;flex-direction:column;gap:0.7rem;">
+            <span class="eyebrow eyebrow--dark">Page · How It Works</span>
+            <h3 style="font-size:1.55rem;">4-Stage Dispatch, Checklist &amp; FAQ</h3>
+            <p style="color:var(--charcoal-muted);font-size:0.94rem;">Watch our 4x4 drive across all four booking milestones, check pre-trip readiness, and read every FAQ.</p>
+            <strong style="font-family:var(--font-mono);font-size:0.74rem;color:var(--terracotta-deep);margin-top:auto;">OPEN BOOKING &amp; FAQ PAGE &rarr;</strong>
+          </a>
+          <a href="gallery.html" class="check-card" data-slide="left" data-slide-delay="2" style="display:flex;flex-direction:column;gap:0.7rem;">
+            <span class="eyebrow eyebrow--dark">Page · Gallery</span>
+            <h3 style="font-size:1.55rem;">Cinematic Field Archive &amp; Lightbox</h3>
+            <p style="color:var(--charcoal-muted);font-size:0.94rem;">Step into our masked editorial collage spanning high passes, coastal headlands, deserts, and starlit camps.</p>
+            <strong style="font-family:var(--font-mono);font-size:0.74rem;color:var(--terracotta-deep);margin-top:auto;">OPEN VISUAL GALLERY &rarr;</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials 3D Carousel -->
+    <section class="section-obsidian" aria-labelledby="home-testi-title">
+      <div class="container">
+        <div style="text-align:center;max-width:680px;margin:0 auto 2.75rem;" data-slide="left">
+          <span class="eyebrow">03 · Voices From The Convoy</span>
+          <h2 class="section-title" id="home-testi-title">Stories Shared Around the <em>Tailgate</em></h2>
+          <div style="margin-top:0.85rem;"><span class="demo-pill">Sample Traveller Testimonials · Editable Demo Reviews</span></div>
+        </div>
+        <div class="testi-3d-stage" id="testiStage" aria-live="polite" data-slide="right"></div>
+        <div class="testi-controls" data-slide="left">
+          <button type="button" class="icon-circle-btn" id="testiPrev" aria-label="Previous review">&lsaquo;</button>
+          <div class="testi-dots" id="testiDots"></div>
+          <button type="button" class="icon-circle-btn" id="testiNext" aria-label="Next review">&rsaquo;</button>
+          <button type="button" class="pause-pill" id="testiPauseBtn">Pause Autoplay</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Journal Teaser -->
+    <section class="section-paper" aria-labelledby="home-journal-title">
+      <div class="container">
+        <div class="section-header-row">
+          <div data-slide="left">
+            <span class="eyebrow eyebrow--dark">04 · The Cairn &amp; Axle Almanac</span>
+            <h2 class="section-title section-title--on-light" id="home-journal-title">Latest <em>Field Dispatches</em></h2>
+          </div>
+          <a href="journal.html" class="btn btn--dark" data-slide="right">Read All 6 Stories &rarr;</a>
+        </div>
+        <div class="journal-grid" id="journalGrid" data-limit="3"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand" data-slide="left">
+          <a href="home.html" class="brand-logo"><span class="brand-mark" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5.5" r="1.8" fill="#C47752" stroke="#C47752"/><rect x="8.5" y="9" width="7" height="3.2" rx="1.6"/><rect x="6" y="13.8" width="12" height="3.6" rx="1.8"/><path d="M3.5 19.5h17" stroke="#C47752" stroke-width="2"/><circle cx="6" cy="19.5" r="1.3" fill="#F6F0E4" stroke="none"/><circle cx="18" cy="19.5" r="1.3" fill="#F6F0E4" stroke="none"/></svg></span><span class="brand-wordmark"><strong>CAIRN &amp; AXLE</strong><span>Overland Motor Club</span></span></a>
+          <p>Curated self-drive expeditions, mountain passes, coastal drives, and overland convoys crafted for drivers who take the long way.</p>
+          <form class="newsletter-form" id="newsletterForm" novalidate>
+            <label for="nl-email" style="font-family:var(--font-mono);font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--terracotta-light);">Join The Route Dispatch</label>
+            <div class="newsletter-row"><input type="email" id="nl-email" required autocomplete="email" placeholder="your@email.com"><button type="submit" class="btn btn--primary" style="padding:0.68rem 1.15rem;font-size:0.8rem;">Subscribe</button></div>
+            <div class="newsletter-status" id="newsletterStatus" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+        <div class="footer-col" data-slide="left" data-slide-delay="1">
+          <h3>Multi-Page Directory</h3>
+          <ul class="footer-links">
+            <li><a href="home.html">Home Hub</a></li>
+            <li><a href="trips.html">Road Trips Catalogue</a></li>
+            <li><a href="about.html">Why Us &amp; Accreditations</a></li>
+            <li><a href="how-it-works.html">How Booking Works &amp; FAQ</a></li>
+            <li><a href="gallery.html">Destination Gallery</a></li>
+            <li><a href="journal.html">The Cairn &amp; Axle Almanac</a></li>
+            <li><a href="contact.html">Contact &amp; Enquiry</a></li>
+          </ul>
+        </div>
+        <div class="footer-col" data-slide="right" data-slide-delay="2">
+          <h3>Signature Corridors</h3>
+          <ul class="footer-links">
+            <li><a href="trip-detail.html?id=leh-ladakh">Leh–Ladakh Traverse</a></li>
+            <li><a href="trip-detail.html?id=konkan-coast">Konkan Coastal Highway</a></li>
+            <li><a href="trip-detail.html?id=thar-desert">Great Thar Dune Trail</a></li>
+            <li><a href="trip-detail.html?id=coorg-ridge">Coorg Misty Ridge</a></li>
+            <li><a href="trip-detail.html?id=satpura-canopy">Satpura Canopy Drive</a></li>
+            <li><a href="trip-detail.html?id=spiti-rann">Spiti to Rann Circuit</a></li>
+          </ul>
+        </div>
+        <div class="footer-col" data-slide="right" data-slide-delay="3">
+          <h3>Basecamp (Editable)</h3>
+          <ul class="footer-links">
+            <li><a href="mailto:dispatch@cairnandaxle.example">dispatch@cairnandaxle.example</a></li>
+            <li><a href="tel:+910000000000">+91 98000 00000 (Placeholder)</a></li>
+            <li style="color:var(--sand-muted);font-size:0.86rem;">Garage 08, Laterite Courtyard, Indiranagar, Bengaluru 560038</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-finale" id="footerFinale">
+        <svg class="footer-road-svg" viewBox="0 0 760 110" aria-hidden="true"><path class="footer-road-base" d="M 10 92 C 150 92, 190 22, 310 52 C 420 80, 480 18, 600 44 C 665 58, 710 42, 748 24"/><path class="footer-road-draw" id="footerRoadDraw" d="M 10 92 C 150 92, 190 22, 310 52 C 420 80, 480 18, 600 44 C 665 58, 710 42, 748 24"/><circle cx="748" cy="24" r="5" fill="#C47752" stroke="#F6F0E4" stroke-width="2"/></svg>
+        <p class="footer-closing-quote" data-slide="left">Take The Long Way. <span>Make It Unforgettable.</span></p>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2027 CAIRN &amp; AXLE OVERLAND · DEMO CONTENT</span>
+        <div class="footer-legal">
+          <a href="index.html">Single-Page Edition</a>
+          <button type="button" data-legal="privacy">Privacy Policy</button>
+          <button type="button" data-legal="terms">Terms &amp; Conditions</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll back to top">&uarr;</button>
+
+  <dialog class="editorial-dialog" id="storyDialog" closedby="any" aria-labelledby="storyDialogTitle">
+    <div class="dialog-header"><span class="eyebrow" id="storyDialogMeta">THE CAIRN &amp; AXLE ALMANAC</span><form method="dialog"><button type="submit" class="dialog-close-btn" aria-label="Close story" autofocus>&times;</button></form></div>
+    <div class="dossier-hero"><img id="storyDialogImg" src="" alt="" class="editorial-photo" fetchpriority="low"><div class="dossier-hero-title"><h2 id="storyDialogTitle">Story</h2></div></div>
+    <div class="dossier-body story-article" id="storyDialogBody"></div>
+  </dialog>
+
+  <dialog class="editorial-dialog" id="legalDialog" closedby="any" aria-labelledby="legalDialogTitle">
+    <div class="dialog-header"><h2 id="legalDialogTitle" style="font-family:var(--font-display);font-size:1.4rem;font-weight:500;">Policy</h2><form method="dialog"><button type="submit" class="dialog-close-btn" aria-label="Close legal modal" autofocus>&times;</button></form></div>
+    <div class="dossier-body story-article" id="legalDialogBody"></div>
+  </dialog>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

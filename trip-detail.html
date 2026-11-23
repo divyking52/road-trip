@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expedition Route Dossier — CAIRN &amp; AXLE</title>
+  <meta name="description" content="Detailed day-by-day route itinerary, elevation telemetry, inclusions, and interactive INR demo cost calculator for Cairn & Axle road trips.">
+  <meta name="theme-color" content="#34302B">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..600&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="expect" href="#page-hero" blocking="render">
+</head>
+<body data-page="trip-detail">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div class="custom-cursor" id="customCursor" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="nav-inner">
+      <a href="home.html" class="brand-logo"><span class="brand-mark" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5.5" r="1.8" fill="#C47752" stroke="#C47752"/><rect x="8.5" y="9" width="7" height="3.2" rx="1.6"/><rect x="6" y="13.8" width="12" height="3.6" rx="1.8"/><path d="M3.5 19.5h17" stroke="#C47752" stroke-width="2"/><circle cx="6" cy="19.5" r="1.3" fill="#F6F0E4" stroke="none"/><circle cx="18" cy="19.5" r="1.3" fill="#F6F0E4" stroke="none"/></svg></span><span class="brand-wordmark"><strong>CAIRN &amp; AXLE</strong><span>Overland Motor Club</span></span></a>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-links">
+          <li><a href="home.html" class="nav-link">Home</a></li>
+          <li><a href="trips.html" class="nav-link is-active" aria-current="page">Road Trips</a></li>
+          <li><a href="about.html" class="nav-link">Why Us</a></li>
+          <li><a href="how-it-works.html" class="nav-link">How It Works</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="journal.html" class="nav-link">Journal</a></li>
+          <li><a href="contact.html" class="nav-link">Enquire</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn--primary nav-cta magnetic"><span>Plan Your Journey</span> &rarr;</a>
+        <button type="button" class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileDrawer" aria-label="Toggle navigation menu"><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="scroll-progress-track" aria-hidden="true"><div class="scroll-progress-bar" id="scrollProgressBar"></div></div>
+  </header>
+
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <nav aria-label="Mobile navigation">
+      <ul class="mobile-nav-list">
+        <li><a href="home.html">Home <span>01</span></a></li>
+        <li><a href="trips.html" aria-current="page">Road Trips <span>02</span></a></li>
+        <li><a href="about.html">Why Us &amp; Accreditations <span>03</span></a></li>
+        <li><a href="how-it-works.html">How It Works &amp; FAQ <span>04</span></a></li>
+        <li><a href="gallery.html">Visual Gallery <span>05</span></a></li>
+        <li><a href="journal.html">Travel Journal <span>06</span></a></li>
+        <li><a href="contact.html">Contact &amp; Enquiry <span>07</span></a></li>
+      </ul>
+    </nav>
+    <div class="mobile-drawer-footer"><a href="contact.html" class="btn btn--primary" style="width:100%;">Plan My Road Trip</a></div>
+  </div>
+
+  <main id="main-content">
+    <section class="page-hero" id="page-hero" aria-labelledby="detailTitle">
+      <div class="hero-backdrop" id="heroParallax">
+        <img id="detailHeroImg" src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1600&q=85" alt="Expedition route landscape" class="hero-bg-img" fetchpriority="high" width="1600" height="1000">
+      </div>
+      <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="container page-hero-grid">
+        <div>
+          <nav class="breadcrumb" aria-label="Breadcrumb"><a href="home.html">Home</a> <span>/</span> <a href="trips.html">Road Trips</a> <span>/</span> <span id="detailBreadcrumb">ROUTE</span></nav>
+          <span class="eyebrow" id="detailCategory">EXPEDITION DOSSIER</span>
+          <h1 class="page-hero-title" id="detailTitle" style="margin-top:0.55rem;">Leh–Ladakh &amp; Khardung La Traverse</h1>
+          <p class="page-hero-desc" id="detailTeaser"></p>
+        </div>
+        <div class="page-hero-meta">
+          <span class="demo-pill">Editable INR Demo Estimator</span>
+          <a href="trips.html" class="btn btn--secondary">&larr; Back to All Road Trips</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-dark">
+      <div class="container detail-layout">
+        <div>
+          <div class="metrics-grid" id="detailStats" style="margin-top:0;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));" data-slide="left"></div>
+
+          <h2 class="section-title" style="font-size:clamp(1.85rem,3.4vw,2.75rem);margin-top:2.75rem;" data-slide="left">Day-by-Day <em>Route Architecture</em></h2>
+          <ul class="detail-timeline" id="detailTimeline"></ul>
+
+          <div class="inclusions-grid">
+            <div class="inclusion-box" data-slide="left">
+              <h3>Included in Demo Package</h3>
+              <ul id="detailInclusions"></ul>
+            </div>
+            <div class="inclusion-box" data-slide="right">
+              <h3>Transparent Exclusions</h3>
+              <ul id="detailExclusions"></ul>
+            </div>
+          </div>
+
+          <div style="margin-top:2.5rem;padding-top:1.75rem;border-top:1px solid var(--sand-15);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;" data-slide="left">
+            <a href="trips.html" class="btn btn--secondary">&larr; All Expeditions</a>
+            <a href="trip-detail.html?id=konkan-coast" id="nextCorridorLink" class="btn btn--primary">Next Expedition &rarr;</a>
+          </div>
+        </div>
+
+        <aside class="calculator-card" data-slide="right" aria-labelledby="calc-heading">
+          <span class="eyebrow">Live Demo Cost Estimator</span>
+          <h2 id="calc-heading" style="font-family:var(--font-display);font-size:1.65rem;font-weight:500;margin:0.45rem 0 0.4rem;">Configure Your Seat</h2>
+          <p id="detailDepartureNote" style="font-family:var(--font-mono);font-size:0.72rem;color:var(--terracotta-light);margin-bottom:1.25rem;"></p>
+
+          <div style="display:flex;flex-direction:column;gap:1rem;">
+            <div class="field">
+              <label for="calcTier">Vehicle &amp; Driving Format</label>
+              <select id="calcTier">
+                <option value="own">Self-Drive — Own Vehicle in Convoy (Base)</option>
+                <option value="shared">Shared Expedition Seat (With Captain)</option>
+                <option value="suv">Self-Drive — Cairn & Axle Prepped 4x4 SUV</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="calcTravellers">Number of Travellers</label>
+              <input type="number" id="calcTravellers" min="1" max="12" value="2">
+            </div>
+          </div>
+
+          <div class="calc-total-row">
+            <div>
+              <span style="display:block;font-family:var(--font-mono);font-size:0.64rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--sand-muted);">Estimated Demo Total</span>
+              <span style="font-size:0.76rem;color:var(--sand-muted);">Editable placeholder rates (INR)</span>
+            </div>
+            <strong id="calcTotal">₹97,000</strong>
+          </div>
+
+          <a href="contact.html" id="detailReserveBtn" class="btn btn--primary magnetic" style="width:100%;">Reserve This Route &rarr;</a>
+          <p style="font-size:0.78rem;color:var(--sand-muted);margin-top:0.85rem;text-align:center;">Clicking Reserve carries your corridor, vehicle format &amp; group size directly into our Enquiry Dispatch.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand" data-slide="left">
+          <a href="home.html" class="brand-logo"><span class="brand-mark" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5.5" r="1.8" fill="#C47752" stroke="#C47752"/><rect x="8.5" y="9" width="7" height="3.2" rx="1.6"/><rect x="6" y="13.8" width="12" height="3.6" rx="1.8"/><path d="M3.5 19.5h17" stroke="#C47752" stroke-width="2"/><circle cx="6" cy="19.5" r="1.3" fill="#F6F0E4" stroke="none"/><circle cx="18" cy="19.5" r="1.3" fill="#F6F0E4" stroke="none"/></svg></span><span class="brand-wordmark"><strong>CAIRN &amp; AXLE</strong><span>Overland Motor Club</span></span></a>
+          <p>Curated self-drive expeditions and small-group road journeys crafted for drivers who take the long way.</p>
+          <form class="newsletter-form" id="newsletterForm" novalidate>
+            <label for="nl-email" style="font-family:var(--font-mono);font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--terracotta-light);">Join The Route Dispatch</label>
+            <div class="newsletter-row"><input type="email" id="nl-email" required autocomplete="email" placeholder="your@email.com"><button type="submit" class="btn btn--primary" style="padding:0.68rem 1.15rem;font-size:0.8rem;">Subscribe</button></div>
+            <div class="newsletter-status" id="newsletterStatus" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+        <div class="footer-col" data-slide="left" data-slide-delay="1">
+          <h3>Multi-Page Directory</h3>
+          <ul class="footer-links">
+            <li><a href="home.html">Home Hub</a></li>
+            <li><a href="trips.html">Road Trips Catalogue</a></li>
+            <li><a href="about.html">Why Us &amp; Accreditations</a></li>
+            <li><a href="how-it-works.html">How Booking Works &amp; FAQ</a></li>
+            <li><a href="gallery.html">Destination Gallery</a></li>
+            <li><a href="journal.html">The Cairn &amp; Axle Almanac</a></li>
+            <li><a href="contact.html">Contact &amp; Enquiry</a></li>
+          </ul>
+        </div>
+        <div class="footer-col" data-slide="right" data-slide-delay="2">
+          <h3>Signature Corridors</h3>
+          <ul class="footer-links">
+            <li><a href="trip-detail.html?id=leh-ladakh">Leh–Ladakh Traverse</a></li>
+            <li><a href="trip-detail.html?id=konkan-coast">Konkan Coastal Highway</a></li>
+            <li><a href="trip-detail.html?id=thar-desert">Great Thar Dune Trail</a></li>
+            <li><a href="trip-detail.html?id=coorg-ridge">Coorg Misty Ridge</a></li>
+            <li><a href="trip-detail.html?id=satpura-canopy">Satpura Canopy Drive</a></li>
+            <li><a href="trip-detail.html?id=spiti-rann">Spiti to Rann Circuit</a></li>
+          </ul>
+        </div>
+        <div class="footer-col" data-slide="right" data-slide-delay="3">
+          <h3>Basecamp (Editable)</h3>
+          <ul class="footer-links">
+            <li><a href="mailto:dispatch@cairnandaxle.example">dispatch@cairnandaxle.example</a></li>
+            <li><a href="tel:+910000000000">+91 98000 00000 (Placeholder)</a></li>
+            <li style="color:var(--sand-muted);font-size:0.86rem;">Garage 08, Laterite Courtyard, Indiranagar, Bengaluru 560038</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-finale" id="footerFinale">
+        <svg class="footer-road-svg" viewBox="0 0 760 110" aria-hidden="true"><path class="footer-road-base" d="M 10 92 C 150 92, 190 22, 310 52 C 420 80, 480 18, 600 44 C 665 58, 710 42, 748 24"/><path class="footer-road-draw" id="footerRoadDraw" d="M 10 92 C 150 92, 190 22, 310 52 C 420 80, 480 18, 600 44 C 665 58, 710 42, 748 24"/><circle cx="748" cy="24" r="5" fill="#C47752" stroke="#F6F0E4" stroke-width="2"/></svg>
+        <p class="footer-closing-quote" data-slide="left">Take The Long Way. <span>Make It Unforgettable.</span></p>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2027 CAIRN &amp; AXLE OVERLAND · DEMO CONTENT</span>
+        <div class="footer-legal">
+          <a href="index.html">Single-Page Edition</a>
+          <button type="button" data-legal="privacy">Privacy Policy</button>
+          <button type="button" data-legal="terms">Terms &amp; Conditions</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll back to top">&uarr;</button>
+  <dialog class="editorial-dialog" id="legalDialog" closedby="any" aria-labelledby="legalDialogTitle">
+    <div class="dialog-header"><h2 id="legalDialogTitle" style="font-family:var(--font-display);font-size:1.4rem;font-weight:500;">Policy</h2><form method="dialog"><button type="submit" class="dialog-close-btn" aria-label="Close legal modal" autofocus>&times;</button></form></div>
+    <div class="dossier-body story-article" id="legalDialogBody"></div>
+  </dialog>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
